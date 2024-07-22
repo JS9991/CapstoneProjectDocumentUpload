@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Upload Interface</title>
+    <link rel="stylesheet" href="documentupload.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Visa Application - Document Upload</h1>
+        <form id="uploadForm">
+            <div class="upload-section">
+                <label for="passport">Passport Copy</label>
+                <input type="file" id="passport" name="passport" accept="application/pdf, image/*" required>
+                <div class="preview" id="passportPreview"></div>
+            </div>
+            <div class="upload-section">
+                <label for="photo">Passport-sized Photo</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+                <div class="preview" id="photoPreview"></div>
+            </div>
+            <div class="upload-section">
+                <label for="financial">Financial Statements</label>
+                <input type="file" id="financial" name="financial" accept="application/pdf, image/*" required>
+                <div class="preview" id="financialPreview"></div>
+            </div>
+            <div class="upload-section">
+                <label for="itinerary">Travel Itinerary</label>
+                <input type="file" id="itinerary" name="itinerary" accept="application/pdf, image/*" required>
+                <div class="preview" id="itineraryPreview"></div>
+            </div>
+            <button type="submit">Submit Documents</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
